@@ -1,0 +1,3 @@
+[submodule "vim-qml"]
+	path = vim-qml
+	url = git@github.com:peterhoeg/vim-qml.git
