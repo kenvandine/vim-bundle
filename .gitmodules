@@ -10,3 +10,9 @@
 [submodule "vim-repeat"]
 	path = vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
+[submodule "vim-liquid"]
+	path = vim-liquid
+	url = git://github.com/tpope/vim-liquid.git
+[submodule "vim-commentary"]
+	path = vim-commentary
+	url = git://github.com/tpope/vim-commentary.git
