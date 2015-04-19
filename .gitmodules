@@ -4,3 +4,9 @@
 [submodule "vim-sensible"]
 	path = vim-sensible
 	url = git://github.com/tpope/vim-sensible.git
+[submodule "vim-surround"]
+	path = vim-surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "vim-repeat"]
+	path = vim-repeat
+	url = git://github.com/tpope/vim-repeat.git
