@@ -12,14 +12,25 @@ endif
 
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
-if has("autocmd")
-  filetype plugin indent on
-endif
+" if has("autocmd")
+"  filetype plugin indent on
+" endif
 
 set autowrite      " Automatically save before commands like :next and :make
 set hidden         " Hide buffers when they are abandoned
-set mouse=a        " Enable mouse usage (all modes)
+" set mouse=a        " Enable mouse usage (all modes)
 
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
