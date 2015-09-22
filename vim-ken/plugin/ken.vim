@@ -29,6 +29,7 @@ let &t_EI .= "\<Esc>[?2004l"
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
+" from https://coderwall.com/p/if9mda/automatically-set-paste-mode-in-vim-when-pasting-in-insert-mode
 function! XTermPasteBegin()
   set pastetoggle=<Esc>[201~
   set paste
